@@ -100,6 +100,9 @@ def main():
 
             thread_id = post_to_threads(post_text)
             print(f"Threads 게시 완료 → {thread_id}\n")
+        except requests.HTTPError as e:
+            print(f"오류 발생, 스킵: {e}")
+            print(f"응답 내용: {e.response.text}\n")
         except Exception as e:
             print(f"오류 발생, 스킵: {e}\n")
 
