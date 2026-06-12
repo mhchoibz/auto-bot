@@ -2,7 +2,7 @@ name: IT Trends Bot
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # 매일 UTC 09:00 (한국 오후 6시)
+    - cron: '5 9 * * *'  # 매일 UTC 09:05 (한국 오후 6시 5분)
   workflow_dispatch:
 
 jobs:
